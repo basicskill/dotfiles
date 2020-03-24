@@ -1,0 +1,83 @@
+#! /bin/bash
+# author: basicskill
+# TODO: skripta za izvlacenje TODO zaglavlja iz configova!
+
+# Open terminal
+super + Return
+    $TERMINAL
+
+# Program launcher
+super + r
+    rofi -show run
+
+# Open file explorer
+super + e
+    $TERMINAL -e zsh -c "source .zshrc && ranger"
+
+# Open browser
+super + b
+    $BROWSER
+
+# Exit script
+super + shift + e
+    endscript
+
+# Keyboard switch (lepse + grafika)
+super + c
+    xkb-swap
+
+# Network manager (widzet!)
+super + w
+    $TERMINAL --name wifi -e nmtui
+
+# Screenshot
+Print
+    flameshot gui
+
+###########  Sound control  ###########
+
+# Sound panet
+super + n
+    $TERMINAL -e alsamixer
+
+# Pavucontrol
+super + p
+    pavucontrol
+
+# Volume Up/Down
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+    amixer -q sset Master 3%{+,-}
+
+# Audio toggle
+XF86AudioMute
+    amixer -q set Master toggle; exec amixer -q set Speaker unmute
+
+# Microphone toggle
+XF86AudioMicMute
+    amixer set Capture toggle
+
+#######################################
+
+# Screen lock
+XF86ScreenSaver
+    lock
+
+# Mouse corner
+super + grave
+    mrdaj_mis
+
+# Monitor control
+XF86Display
+    arandr
+
+# WebCam
+XF86WebCam
+    cheese
+
+# Screen off
+super + BackSpace
+    xset dpms force off
+
+# Torrent
+super + t
+    trensmission-gtk

@@ -1,0 +1,143 @@
+#font
+# font pango:DejaVu Sans Mono 8
+font pango:Ubuntu Mono 8
+
+####################### promenljive  ######################
+set $mod Mod4
+set $muzika cmus
+set $dmenu dmenu -nb '#101010' -nf '#ddd' -sb '#385e6b' -sf '#101010'
+set $dmenu_run dmenu_run -nb '#101010' -nf '#ddd' -sb '#385e6b' -sf '#101010'
+set $term gnome-terminal
+
+####################### prozori  ######################
+# Gapovi
+# gaps inner 10
+
+# lajsna
+# default_border pixel 1
+
+new_window pixel 1
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# MOVE focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternative MOVE
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# resize window (you can also use the mouse for that)
+bindsym $Mod+Shift+p resize grow width 10 px or 10 ppt
+bindsym $Mod+Shift+i resize grow height 10 px or 10 ppt
+bindsym $Mod+Shift+o resize shrink height 10 px or 10 ppt
+bindsym $Mod+Shift+u resize shrink width 10 px or 10 ppt
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# fullscreen
+bindsym $mod+f fullscreen toggle
+
+# horizontalno deljenje
+bindsym $mod+c split h
+
+# vertihalno deljenje
+bindsym $mod+v split v
+
+
+####################### workspace  ######################
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "A"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+####################### paljenje ######################
+# restart i3 inplace
+bindsym $mod+Shift+r exec pkill compton && xrdb ~/.Xdefaults;; restart reload;;
+
+# Compton
+exec_always --no-startup-id compton -b --config ~/.config/compton.conf
+
+# skrecped
+##### Leteci prozori
+for_window [instance="updejt"] floating enable
+for_window [instance="updejt"] resize set 920 550
+for_window [instance="updejt"] move scratchpad
+for_window [instance="updejt"] border pixel 5
+for_window [instance="arandr"] floating enable
+for_window [instance="wifi"] floating enable
+for_window [instance="cheese"] floating enable
+for_window [instance="alsamixer"] floating enable
+for_window [instance="transmission-gtk"] floating enable
+for_window [instance="python"] floating enable
+for_window [instance="mpv"] floating enable
+for_window [instance="mpv"] resize set 100 100
+for_window [instance="pavucontrol"] floating enable
+
+# Update windows
+exec --no-startup-id $term --name updejt -e tmux new -s updejt
+
+####################### Bindings ######################
+
+# Floating
+bindsym $mod+space floating toggle
+
+# Skrecped
+bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move position center
+
+#------------------------#
+
+## STARTUP
+exec flameshot
+exec sxhkd &
+exec --no-startup-id feh --bg-scale /home/mladen/wallpapers/.wall
+exec_always --no-startup-id xmodmap $HOME/.Xmodmap
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launcher.sh
+exec_always --no-startup-id xset r rate 280 40

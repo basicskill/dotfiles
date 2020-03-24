@@ -1,0 +1,55 @@
+URxvt*background: [90]#151515
+URxvt*foreground: #c6a57b
+! URxvt*background: #151515
+!black
+URxvt*color0: #101010
+URxvt*color8: #404040
+!red
+URxvt*color1: #953331
+URxvt*color9: #8D4A48
+!green
+URxvt*color2: #546A29
+URxvt*color10: #7E9960
+!yellow
+URxvt*color3: #909737
+URxvt*color11: #9CA554
+!blue
+URxvt*color4: #385E6B
+URxvt*color12: #5C737C
+!magenta
+URxvt*color5: #7F355E
+URxvt*color13: #95618B
+!cyan
+URxvt*color6: #34676F
+URxvt*color14: #5D858A
+!white
+URxvt*color7: #dddddd
+URxvt*color15: #dddddd
+
+URxvt.intensityStyles:	true
+URxvt.background:       [95]#111111
+URxvt.depth:		    32
+!URxvt.font: 		    xft:Dejavu Sans Mono:size=12
+URxvt.font: 		    xft:Ubuntu Mono:style=Regular:size=12
+URxvt.scrollBar:	    false
+URxvt.cursorColor:	    mangenta
+URxvt.cursorUnderline:  true
+URxvt.cursorBlink:      true
+
+!! Extensions,url-select,keyboard-select
+URxvt.perl-ext-common:	default,matcher
+URxvt.colorUL:		    #4682B4
+
+!! url-select
+!! !! URxvt.keysym.M-u:	perl:url-select:select_next
+!! URxvt.url-select.launcher: qutebrowser
+!! URxvt.url-select.underline: true
+!! URvxt.url-select.button: true
+!! keyboard-select:
+!! URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+!! URxvt.resize-font.smaller:	C-Down
+!! URxvt.resize-font.bigger:	C-Up
+!! Matcher
+!! URxvt.url-launcher:	/usr/bin/xdg-open
+!! URxvt.matcher.button:	1
