@@ -21,6 +21,11 @@ height = 15
 fixed-center = true
 bottom = true
 
+tray-position = right
+tray-padding = 2
+tray-transparent = true
+Tray-background = #0063ff
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -64,6 +69,7 @@ format-volume-underline = #f1f1f1
 format-muted-foreground = #fc4141
 format-muted-underline = #fc4141
 label-muted = "Muted "
+
 [module/calendar]
 type = custom/script
 exec = date "+%a %d/%b   "

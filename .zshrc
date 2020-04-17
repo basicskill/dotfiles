@@ -110,7 +110,7 @@ export PATH=~/.gem/ruby/2.5.0/bin:$PATH
 cheat() { curl cheat.sh/$1 }
 hotspot() { sudo create_ap wlp3s0 enp0s25 "Mladenov ThinkPad" raskoljnikov }
 
-export working='/home/mladen/projekti/CTFs/pwnable.kr'
+export working='/home/mladen/fax/s4/JMF/projekat'
 
 # Aliases
 if [ -f ~/.shell_aliases ]; then

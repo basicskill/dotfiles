@@ -24,8 +24,10 @@ c.tabs.select_on_remove = 'prev'
 c.url.default_page = '~/.config/startpage/startpage.html'
 
 c.url.searchengines = {
-        'DEFAULT' :    'https://duckduckgo.com/?q={}',
+        #'DEFAULT' :    'https://duckduckgo.com/?q={}',
+        'DEFAULT'  :    'https://www.google.com/search?q={}',
         'google'  :    'https://www.google.com/search?q={}',
+        'ddg'     :    'https://duckduckgo.com/?q={}',
         'gh'      :    'https://github.com/search?q={}',
         'yt'      :    'https://youtube.com/results?search_query={}',
         'aw'      :    'https://wiki.archlinux.org/index.php/{}',

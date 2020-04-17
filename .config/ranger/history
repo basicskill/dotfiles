@@ -1,50 +1,50 @@
-mkdir corupted_disk
-rename corupted_disk_COMPLETED
-mkdir rsapwn
-mkdir osing
-rename osint
-mkdir 0x008
-mkdir 
-mkdir 0x006
-mkdir 0x004
-search IN
-search zip
-mkdir massanger-basketball
-search .conf
-mkdir random_stuff
-mkdir pwnable.kr
-mkdir Toddler's Bottle
-mkdir fd
-mkdir flag
-rename bof_COMPLETED
-rename collision_COMPLETED
-rename fd_COMPLETED
-rename flag_COMPLETED
-mkdir passcode
-mkdir input
-mkdir random
-rename random_COMPLETED
-mkdir mistake
-rename mistake_COMPLETED
-search local
-search sha
-rename Discord_exe
-search Discord
-rename Discord
-search Disc
-rename avatar.jpeg
-search defa
-search def
-search x
-search init
-search starjk
-rename i3_old
-rename .dotfiles_old
-rename ranger_link
-search ranger
-search qu
-rename qutebrowser_link
+
+mkdir AUCTF
+mkdir web
+mkdir pwn
+mkdir easy_as_pie
 open_with 
-search 
+mkdir 
+mkdir mobile0
+open_with nvim
+mkdir plain_jane
+mkdir passwd
+mkdir har_har_har
+mkdir foren
+mkdir zippy
+mkdir sora
+mkdir pretty_ridiculous
+mkdir crack_me_2
+mkdir dont_break_me
+rename dont_break_me
+open_with
+mkdir purple_socks
+mkdir coding_competition
+rename codingCompetition
+rename codingCompetitions
+mkdir BubbleCup
+mkdir round1
+rename messy.cpp
+search -
+mkdir s4
+rename tOsnovi telekomunikacija - Predavanje - 0-0 - Uvodno predavanje - 2020.pdf
+rename Osnovi telekomunikacija - Predavanje - 1-4 - Slucajni procesi - Termicki sum - 2020.pdf
+rename tOsnovi telekomunikacija - Predavanje - 1-0 - Model TK sistema - Informacija poruke - 2020.pdf
+cd 
+rename tOsnovi telekomunikacija - Predavanje - 1-1 - Harmonijska analiza periodicnih signala - 2020.pdf
+rename tOsnovi telekomunikacija - Predavanje - 1-2 - Harmonijska analiza aperiodicnih signala - 2020.pdf
+rename tOsnovi telekomunikacija - Predavanje - 1-3 - Linearni sistemi  - 2020.pdf
+mkdir notePage
 delete
-mkdir .dotfiles
+rename 3README_old.md
+find 
+mkdir JMF
+mkdir projekat
+mkdir radovi
+rename Application of Ritz’s Method to Thin Elastic Shell Analysis.pdf
+mkdir knjiga
+rename 5.pdf
+rename application.pdf
+rename free_vibrations.pdf
+rename Ritzov_direktni_metod.pdf
+rename Ritzov_direktni_metod_verzija_1.pdf

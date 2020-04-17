@@ -135,9 +135,4 @@ bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move posi
 #------------------------#
 
 ## STARTUP
-exec flameshot
-exec sxhkd &
-exec --no-startup-id feh --bg-scale /home/mladen/wallpapers/.wall
-exec_always --no-startup-id xmodmap $HOME/.Xmodmap
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launcher.sh
-exec_always --no-startup-id xset r rate 280 40
