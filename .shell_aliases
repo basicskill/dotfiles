@@ -1,0 +1,37 @@
+# Mladen's shell aliases
+
+alias reload=". ~/.zshrc && echo 'ZSH reloaded'"
+alias ll="ls -lh --color"
+alias ls="ls --color"
+alias v="nvim"
+alias ov="vim"
+alias sv="sudo vim"
+alias pi="ipython"
+alias bp="bpython"
+alias p="python3"
+alias sp="sudo python"
+alias cw='cd "$working"'
+alias xcopy="xclip -selection c"
+alias xpaste="xclip -selection c -o"
+alias open="xdg-open" 
+alias jew="jupyter notebook"
+alias youtube="mpsyt"
+alias 666="chmod 777"
+
+# Sudo
+alias pacman="sudo pacman"
+alias pc="sudo pacman"
+alias pip="sudo pip"
+alias pipp="sudo pip --proxy $http_proxy"
+alias mount="sudo mount"
+alias umount="sudo umount"
+
+# telefon
+# alias telefon="simple-mtpfs"
+# alias utelefon="fusermount -u"
+
+# dmenu
+alias dmenu="dmenu -nb '#101010' -nf '#ddd' -sb '#385e6b' -sf '#101010'"
+
+# Git config for dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
