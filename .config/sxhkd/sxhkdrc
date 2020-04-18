@@ -24,7 +24,7 @@ super + shift + e
 
 # Network manager (widzet!)
 super + w
-    $TERMINAL --name wifi -e nmtui
+    $TERMINAL -name wifi -e nmtui
 
 # Screenshot
 Print
@@ -51,6 +51,17 @@ XF86AudioMute
 # Microphone toggle
 XF86AudioMicMute
     amixer set Capture toggle
+
+
+########  Monitor Brightness ##########
+
+# Inc Monitor Brightness
+XF86MonBrightnessUp
+    sudo xbacklight -inc 10
+
+# Dec Monitor Brightness
+XF86MonBrightnessDown
+    sudo xbacklight -dec 10
 
 #######################################
 
