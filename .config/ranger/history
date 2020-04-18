@@ -1,4 +1,3 @@
-
 mkdir AUCTF
 mkdir web
 mkdir pwn
@@ -35,7 +34,6 @@ rename tOsnovi telekomunikacija - Predavanje - 1-1 - Harmonijska analiza periodi
 rename tOsnovi telekomunikacija - Predavanje - 1-2 - Harmonijska analiza aperiodicnih signala - 2020.pdf
 rename tOsnovi telekomunikacija - Predavanje - 1-3 - Linearni sistemi  - 2020.pdf
 mkdir notePage
-delete
 rename 3README_old.md
 find 
 mkdir JMF
@@ -48,3 +46,5 @@ rename application.pdf
 rename free_vibrations.pdf
 rename Ritzov_direktni_metod.pdf
 rename Ritzov_direktni_metod_verzija_1.pdf
+mkdir Downloads
+delete

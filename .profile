@@ -15,6 +15,11 @@ export TERMINAL="urxvt"
 export BROWSER="qutebrowser"
 export VISUAL="nvim"
 
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 compton &
 flameshot &
 sxhkd ~/.config/sxhkd/sxhkdrc &

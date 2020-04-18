@@ -1,11 +1,10 @@
 config.load_autoconfig()
 
 c.downloads.position = 'bottom'
-# git --bare
 c.content.cookies.accept = 'all'
 c.colors.webpage.bg = 'black'
-c.fonts.monospace = "DejaVu Sans Mono Nerd Font"
-c.fonts.monospace = "Ubuntu Mono"
+#c.fonts.monospace = "DejaVu Sans Mono"
+#c.fonts.monospace = "Ubuntu Mono"
 
 
 nTab='file:///home/mladen/.config/startpage/startpage.html'
@@ -24,7 +23,6 @@ c.tabs.select_on_remove = 'prev'
 c.url.default_page = '~/.config/startpage/startpage.html'
 
 c.url.searchengines = {
-        #'DEFAULT' :    'https://duckduckgo.com/?q={}',
         'DEFAULT'  :    'https://www.google.com/search?q={}',
         'google'  :    'https://www.google.com/search?q={}',
         'ddg'     :    'https://duckduckgo.com/?q={}',

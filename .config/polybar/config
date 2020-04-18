@@ -82,11 +82,11 @@ interval = 1
 time = "%I:%M:%S %p"
 format-underline = none
 label = %time%
+
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = ""
 format-prefix-foreground = #f9f9f9
 format-prefix-underline = #f9f9f9
 

@@ -29,8 +29,7 @@ URxvt*color15: #dddddd
 URxvt.intensityStyles:	true
 URxvt.background:       [95]#111111
 URxvt.depth:		    32
-!URxvt.font: 		    xft:Dejavu Sans Mono:size=12
-URxvt.font: 		    xft:Ubuntu Mono:style=Regular:size=12
+URxvt.font: 		    xft:Dejavu Sans Mono:size=12
 URxvt.scrollBar:	    false
 URxvt.cursorColor:	    mangenta
 URxvt.cursorUnderline:  true

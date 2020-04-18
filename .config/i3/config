@@ -116,6 +116,7 @@ for_window [instance="wifi"] floating enable
 for_window [instance="cheese"] floating enable
 for_window [instance="alsamixer"] floating enable
 for_window [instance="transmission-gtk"] floating enable
+for_window [instance="transmission-qt"] floating enable
 for_window [instance="python"] floating enable
 for_window [instance="mpv"] floating enable
 for_window [instance="mpv"] resize set 100 100

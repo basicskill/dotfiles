@@ -10,3 +10,5 @@ settings:
     global: black
   content.proxy:
     global: none
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: false
