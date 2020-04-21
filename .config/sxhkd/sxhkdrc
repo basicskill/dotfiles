@@ -64,7 +64,6 @@ XF86MonBrightnessDown
     sudo xbacklight -dec 10
 
 #######################################
-
 # Screen lock
 XF86ScreenSaver
     lock
@@ -84,3 +83,8 @@ super + BackSpace
 # Torrent
 super + t
     trensmission-gtk
+
+# Run colorpick tool
+XF86Launch1
+    colorpick
+    
