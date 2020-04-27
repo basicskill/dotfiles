@@ -27,5 +27,5 @@ compinit
 cheat() { curl cheat.sh/$1 }
 hotspot() { sudo create_ap wlp3s0 enp0s25 "Mladenov ThinkPad" raskoljnikov }
 
-# Path to current directory
-export working='/home/mladen/fax/s4/JMF/projekat'
+# If exists, load working directory location
+[ -f ~/.working ] && . ~/.working

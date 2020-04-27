@@ -1,10 +1,15 @@
-#! /bin/sh
+#! /bin/bash
 
 dir=$1
 [ -z "$1" ] && dir="$(pwd)"
 
 dir="$(echo $dir | sed 's/\//\\\//g')"
 
+if [ ! -f "~/.working" ]; then
+    echo "working=$dir" > ~/.working
+    exit
+fi
+
 command="s/working='.*/working='"$dir"'/g"
 
-sed -i -e $command ~/.zshrc
+sed -i -e $command ~/.working
