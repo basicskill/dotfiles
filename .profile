@@ -27,3 +27,5 @@ xset r rate 280 40
 #/home/mladen/.config/polybar/scripts/launcher.sh &
 xmodmap ~/.Xmodmap
 feh --bg-scale /home/mladen/wallpapers/.wall
+dunst &
+discord --start-minimized &
