@@ -20,7 +20,7 @@ alias 666="chmod 777"
 
 # Sudo
 alias pacman="sudo pacman"
-alias pc="sudo pacman"
+alias pc="yay"
 alias pip="sudo pip"
 alias pipp="sudo pip --proxy $http_proxy"
 alias mount="sudo mount"
