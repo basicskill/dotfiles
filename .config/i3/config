@@ -122,8 +122,13 @@ for_window [instance="mpv"] floating enable
 for_window [instance="mpv"] resize set 100 100
 for_window [instance="pavucontrol"] floating enable
 
+for_window [instance="notion"] floating enable
+for_window [instance="notion"] move scratchpad
+for_window [instance="notion"] resize set 1000 600
+
 # Update windows
-exec --no-startup-id $term --name updejt -e tmux new -s updejt
+# exec --no-startup-id $term -name updejt -e tmux new -s updejt
+# bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move position center
 
 ####################### Bindings ######################
 
@@ -131,7 +136,7 @@ exec --no-startup-id $term --name updejt -e tmux new -s updejt
 bindsym $mod+space floating toggle
 
 # Skrecped
-bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move position center
+bindsym $mod+grave [instance="notion"] scratchpad show; [instance="notion"] move position center
 
 #------------------------#
 

@@ -29,3 +29,4 @@ xmodmap ~/.Xmodmap
 feh --bg-scale /home/mladen/wallpapers/.wall
 dunst &
 discord --start-minimized &
+notion-app &
