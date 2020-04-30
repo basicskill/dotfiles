@@ -6,7 +6,7 @@ dir=$1
 dir="$(echo $dir | sed 's/\//\\\//g')"
 
 if [ ! -f "~/.working" ]; then
-    echo "working=$dir" > ~/.working
+    echo "export working=$dir" > ~/.working
     exit
 fi
 
