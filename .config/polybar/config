@@ -46,12 +46,17 @@ font-2 = "Hack Nerd Font:style=Regular:pixelsize=10;2"
 
 modules-left = i3
 modules-center = backlight-acpi
-modules-right = wifi alsa date calendar xkeyboard
+modules-right = check_mail wifi alsa date calendar xkeyboard
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 ;------------------ Right ------------------
+
+[module/check_mail]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/mail.sh
+tail = true
 
 [module/wifi]
 type = custom/script
