@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 alias matlab="/usr/local/MATLAB/R2018a/bin/matlab"
+
+export QSYS_ROOTDIR="/home/mladen/.cache/yay/quartus-free/pkg/quartus-free/opt/altera/19.1/quartus/sopc_builder/bin"

@@ -30,3 +30,5 @@ feh --bg-scale /home/mladen/wallpapers/.wall
 dunst &
 discord --start-minimized &
 notion-app &
+
+export QSYS_ROOTDIR="/home/mladen/.cache/yay/quartus-free/pkg/quartus-free/opt/altera/19.1/quartus/sopc_builder/bin"
