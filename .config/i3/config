@@ -126,9 +126,9 @@ for_window [instance="notion"] floating enable
 for_window [instance="notion"] move scratchpad
 for_window [instance="notion"] resize set 1000 600
 
-# Update windows
-# exec --no-startup-id $term -name updejt -e tmux new -s updejt
-# bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move position center
+# Update window (if error, check docs for name flag)
+exec --no-startup-id $term -name updejt -e tmux new -s updejt
+bindsym $mod+u [instance="updejt"] scratchpad show;[instance="updejt"] move position center
 
 ####################### Bindings ######################
 
