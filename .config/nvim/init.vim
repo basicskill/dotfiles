@@ -6,15 +6,14 @@ set nocompatible
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'scrooloose/nerdtree'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'ludovicchabant/vim-gutentags' " TODO: pročitati dokumentaciju!
     Plug 'junegunn/goyo.vim'
     Plug 'Yggdroot/indentLine'
-    Plug 'tyru/caw.vim' " TODO: proceniti korisnost
-    Plug 'tpope/vim-fugitive' " TODO: pročitati dokumentaciju!
+    " Plug 'tyru/caw.vim' " TODO: proceniti korisnost
+    " Plug 'tpope/vim-fugitive' " TODO: pročitati dokumentaciju!
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 call plug#end()
 " }}}
