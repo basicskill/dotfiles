@@ -17,6 +17,7 @@ alias open="xdg-open"
 alias jew="jupyter notebook"
 alias youtube="mpsyt"
 alias 666="chmod 777"
+alias xo="xdg-open"
 
 # Sudo
 alias pacman="sudo pacman"

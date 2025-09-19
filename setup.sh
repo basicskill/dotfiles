@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Predefined list of file names
-files=("zshrc" "shell_aliases")
+files=("zshrc" "shell_aliases" "config/ranger")
 
 # Loop through each file name
 for file in "${files[@]}"; do
